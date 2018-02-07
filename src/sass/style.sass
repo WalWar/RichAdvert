@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500,700,900')
+
+$bold: 700
+$black: 900
+$reg: 400
+$med: 500
+
+.in
+	max-width: 1280px
+	margin: 0 auto
+	padding: 0 40px
+
+.header
+	background: url(../img/header-bg.png) center no-repeat
+	background-size: cover
+	&__in
+		padding-top: 40px
+	&__logo
+		img
+	&__container
+		display: flex
+		>div
+			width: 50%
+	&__title
+		padding-top: 50px
+		padding-right: 50px
+		padding-bottom: 150px
+		span
+			display: inline-block
+			padding: 0 25px
+			margin-bottom: 20px
+			color: #ff3
+			border: 1px solid #ff3
+			font: 400 18px/55px 'Roboto', sans-serif
+
+	&__form
+		form
+			max-width: 430px
+			background: #fff
+			margin: 0 auto
+			padding: 30px 40px 40px
+			.form__head
+				text-align: center
+				color: #000
+				margin: 0 0 25px
+				font-size: 24px
+				font-weight: $bold
+				line-height: 36px
+			.form__title
+				text-align: center
+				color: #666
+				font-size: 14px
+			
+			input
+				display: block
+				border-radius: 2px
+				border: 1px solid #9a9a9a
+				color: #000
+				margin: 0 auto 12px
+				width: 320px
+				height: 45px
+				padding: 0 20px
+				max-width: 100%
+				font-size: 14px
+				::-webkit-input-placeholder 
+					color:#9a9a9a
+				::-moz-placeholder          
+					color:#9a9a9a
+				:-moz-placeholder           
+					color:#9a9a9a
+				:-ms-input-placeholder      
+					color:#9a9a9a
+
+	&__exclusive
+		color: #ccc
+		font: $reg 24px/36px 'Roboto', sans-serif
+		margin-bottom: 10px
+	h1
+		font: $bold 42px/55px 'Roboto', sans-serif
+		color: #fff
+	p
+		color: #fff
+		font-size: 24px
+		margin: 25px auto
+	ul
+		li
+			font-size: 16px
+			line-height: 30px
+			color: #fff
+
+.block1
+	padding: 80px 0
+	h2
+		font-size: 36px
+		line-height: 78px
+		font-weight: bold
+		text-align: center
+		margin-bottom: 80px
+		position: relative
+		&:before
+			display: inline-block
+			content: ""
+			height: 78px
+			width: 61px
+			background: url("../img/diamond.png") center no-repeat
+			background-size: contain
+			vertical-align: sub
+			margin-right: 25px
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		>div
+			flex: 1
+			display: flex
+			flex-direction: column
+			align-items: center
+		p
+			color: #333
+			font-size: 16px
+			line-height: 22px
+			max-width: 220px
+			text-align: center
+	&__img
+		margin: 10px auto
+		width: 120px
+		height: 120px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #fff
+		box-shadow: 7px 15px 54px 0px rgba(84, 98, 104, 0.15)
+		margin-bottom: 40px
+
+.btn, .btnlink
+	font-size: 18px
+	text-transform: uppercase
+	color: #000
+	background: #fee600
+	border-radius: 3px
+	transition: all 0.3s
+	margin: 0 auto
+	display: block
+	&:hover
+		background: #ffee4b
+		box-shadow: 0px 2px 7.84px 0.16px rgba(0, 0, 0, 0.3)
+
+.btn
+	width: 292px
+	height: 65px
+.btnlink
+	display: block
+	width: 230px
+	height: 50px
+	line-height: 50px
+	text-decoration: none
+	text-align: center
+	margin-top: 80px
+
+.block2
+	&__in
+		background: url("../img/bg4.png") center bottom no-repeat
+		background-size: 1200px
+		height: 800px
+		position: relative
+		h3
+			font-size: 36px
+			color: #000
+			font-weight: $black
+			margin-bottom: 100px
+		span
+			font-size: 36px
+			color: #feda00
+			font-weight: $black
+			display: block
+		p
+			position: absolute
+			font-size: 14px
+			color: #000
+			font-weight: $bold
+	&__head
+		top: 150px
+		left: 100px
+	&__item1
+		top: 220px
+		left: 445px
+	&__item2
+		top: 440px
+		left: 470px
+	&__item3
+		top: 465px
+		right: 40px
+	&__item4
+		top: 332px
+		right: 30px
+
+.block3
+	background: url("../img/bg2.png") center no-repeat
+	background-size: cover
+	display: flex
+	justify-content: flex-end
+	&__in
+		padding: 80px 0 100px
+		width: calc(50% + 80px)
+		background: url(../img/bg3.png) left center no-repeat
+		background-size: cover
+		h3
+			font-size: 36px
+			font-weight: $bold
+			color: #fff
+			padding-left: 80px
+			margin-bottom: 60px
+			&:after
+				display: inline-block
+				content: ""
+				width: 46px
+				height: 56px
+				background: url("../img/microphone.png") center no-repeat
+				background-size: contain
+				margin-left: 25px
+				vertical-align: middle	
+	&__speaker
+		padding: 50px 80px 
+		height: 450px
+		background: #fff
+		width: 680px
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		&:before
+			content: ""
+			display: block
+			height: 450px
+			width: 520px
+			background: url(../img/spiker-img.png) center no-repeat
+			background-size: cover
+			position: absolute
+			left: -520px
+			top: 0
+	h4
+		font-size: 24px
+		font-weight: $bold
+		margin-bottom: 20px
+		font-family: 'Roboto Condensed'
+	p
+		font-family: 'Roboto Condensed'
+		font-size: 16px
+		margin-bottom: 20px
+
+.footer
+	
+	padding-top: 25px
+	padding-bottom: 25px
+	background: #f5f5f5
+	.in
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-end
+		>div
+			flex: 1
+	&__menu
+		li
+			display: inline-block
+			&:after
+				display: inline-block
+				padding: 0 10px
+				content: '\005C'
+			a
+				text-decoration: none
+				font-family: 'Roboto Condensed'
+				font-size: 16px
+				line-height: 20px
+				text-decoration: none
+				text-transform: uppercase
+				color: #313131		
+				transition: all 0.3s
+				&:hover
+					color: #666
+			&:last-child
+				&:after
+					display: none
+	&__social
+		text-align: right
+		a
+			text-align: right
+			color: #313131
+			padding-left: 25px
+			font-size: 14px
+			line-height: 20px
+			text-decoration: none
+			i 
+				padding-right: 5px
+				font-size: 20px
+		div
+			a
+				font-size: 18px
+				padding: 0 0 15px 15px
+				display: inline-block
+
+@media screen and (min-width: 992px) and (max-width: 1280px)
+	.in
+		max-width: 950px
+	.header
+		&__title 
+			span
+				padding: 0 10px
+		h1
+			font-size: 34px
+			line-height: 45px
+
+	.block2
+		&__in
+			width: 950px
+			height: 630px
+			background-size: contain
+			h3
+				margin-bottom: 50px
+			span
+				font-size: 30px
+		&__item1
+			top: 160px
+			left: 335px
+		&__item2
+			top: 330px
+			left: 345px
+		&__item3
+			top: 410px
+		&__item4
+			top: 310px
+	.block3
+		&__speaker
+			width: 555px
+			&:before
+				width: 395px
+				left: -395px
+
+
+@media screen and (max-width: 1280px)
+	.footer
+		.in
+			align-items: center
+			flex-direction: column
+			>div
+				text-align: center
+		&__menu
+			margin-bottom: 20px
+
+@media screen and (max-width: 991px)
+	.header
+		&__container
+			flex-direction: column
+			padding-bottom: 40px
+			>div
+				width: 100%
+				text-align: center
+		&__title
+			padding-right: 0
+			padding-bottom: 50px
+		&_logo
+			text-align: center
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+	.in
+		max-width: 750px
+	.block2
+		&__in
+			width: 750px
+			height: 515px
+			background-size: contain
+			span
+				font-size: 25px
+				line-height: 33px
+			h3
+				margin-bottom: 40px
+		&__item4
+			top: 272px
+			right: 0
+
+		&__item3
+			top: 350px
+			right: 0
+
+		&__item1
+			top: 164px
+			left: 260px
+
+		&__item2
+			top: 263px
+			left: 280px
+			width: 200px
+
+	.block3
+		&__in
+			h3
+				padding-left: 50px
+		&__speaker
+			width: 455px
+			padding: 50px
+			&:before
+				width: 295px
+				left: -295px
+
+@media screen and (max-width: 767px)
+	.in
+		padding: 0 15px
+	.btn
+		max-width: 100%
+	.header
+		p
+			font-size: 18px
+			line-height: 27px
+			margin: 10px auto
+		h1
+			font-size: 27px
+			line-height: 40px
+		ul
+			li
+				text-align: left
+				line-height: 25px
+		&__in
+			padding-top: 20px
+		&__title
+			padding-top: 25px
+			padding-bottom: 25px
+			span
+				padding: 0 15px
+				line-height: 32px
+				margin-bottom: 15px
+		&__form 
+			form
+				padding: 25px 10px
+
+	.block1
+		&__container
+			flex-direction: column
+			>div
+				width: 100%
+		h2
+			font-size: 28px 
+			margin-bottom: 20px
+			&:before
+				width: 30px
+				height: 50px
+				margin-right: 10px
+				vertical-align: sub
+	.block2
+		&__head
+			margin-bottom: 25px
+		h3
+			text-align: center
+			font-size: 26px
+			padding-top: 40px
+			margin-bottom: 40px
+		&__in
+			background: none
+			height: auto
+			padding-bottom: 25px
+			span
+				font-size: 30px
+			p
+				position: static
+				margin-bottom: 25px
+	.block3
+		&__in
+			width: 100%
+			padding: 55px 0 0
+			h3
+				padding-left: 0
+				text-align: center
+		&__speaker
+			height: auto
+			width: 100%
+			padding: 10px
+			padding-top: 320px
+			&:before
+				left: 0	
+				height: 300px
+				max-width: 450px
+				width: 100%
+	
+	.footer
+		&__social
+			a
+				padding-left: 0
+				display: block
+				margin: 5px auto
+				text-align: center
